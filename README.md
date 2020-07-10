@@ -4,7 +4,8 @@
 # 논문 읽고, 이해,  중
 
 
-![Comparison of different approaches](https://user-images.githubusercontent.com/59387983/87162658-316f9000-c301-11ea-9759-e09b3e09f7a4.PNG)
+![Comparison of different approaches](https://user-images.githubusercontent.com/59387983/87162966-a04ce900-c301-11ea-920a-d412c081c615.PNG)
+
 
 ![vanilla convolutions(1)](https://user-images.githubusercontent.com/59387983/87162684-3d5b5200-c301-11ea-9762-7df9f2a54d2b.PNG)
 ![vanilla convolutions(2)](https://user-images.githubusercontent.com/59387983/87162689-3df3e880-c301-11ea-9b0a-4ea007204f5e.PNG)
