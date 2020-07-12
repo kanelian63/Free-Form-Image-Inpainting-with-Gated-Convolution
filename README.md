@@ -35,6 +35,7 @@ Partial convolution은 정형화되지 않은 마스크에서 복원이미지의
 
 # Gated Convolution
 ![functions of gated convolution](https://user-images.githubusercontent.com/59387983/87162693-3e8c7f00-c301-11ea-8168-56d6bae52cc2.PNG)
+
 수식과 개념은 쉽다. 단지 이런 걸 착안할 수 있는 배경지식과 환경이 문제다. 일어나서 서 하겠습니다~
 
 ![Ilustration of convolutions](https://user-images.githubusercontent.com/59387983/87162695-3f251580-c301-11ea-83bb-f31f2e0759e4.PNG)
