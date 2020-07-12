@@ -2,7 +2,7 @@
 #ICCV 2019 #GAN #Image Inpainting #Computer Vision
 
 
-# 논문 읽고, 이해,  중
+# 논문 읽고, 이해, 공부 중
 
 # Introduction
 컴퓨터 비전에는 이미지 인 페인팅에 대한 두 가지 광범위한 접근 방식이 있다. 저수준 이미지 피쳐를 사용한 패치 매칭과 딥 컨벌루션을 사용한 피드 포워드 생성 모델이다. 전자의 접근 방식은 그럴듯한 정적인 텍스처를 합성 할 수 있지만 복잡한 장면, 얼굴 및 물체와 같은 정적이지 않은 경우에는 일반적으로 심각한 오류를 만든다. 후자의 접근 방식은 대량의 훈련 세트에서 학습 된 결과를 활용하여 정적이지 않은 이미지의 컨텐츠를 엔드 투 엔드 방식으로 합성할 수 있다. 
@@ -35,7 +35,13 @@ Partial convolution은 정형화되지 않은 마스크에서 복원이미지의
 
 # Gated Convolution
 ![functions of gated convolution](https://user-images.githubusercontent.com/59387983/87162693-3e8c7f00-c301-11ea-8168-56d6bae52cc2.PNG)
+수식과 개념은 쉽다. 단지 이런 걸 착안할 수 있는 배경지식과 환경이 문제다. 일어나서 서 하겠습니다~
+
 ![Ilustration of convolutions](https://user-images.githubusercontent.com/59387983/87162695-3f251580-c301-11ea-83bb-f31f2e0759e4.PNG)
+
+
+
+# Architecture
 ![Overview of SN-PatchGAN](https://user-images.githubusercontent.com/59387983/87162699-3f251580-c301-11ea-9975-395880be246a.PNG)
 
 
