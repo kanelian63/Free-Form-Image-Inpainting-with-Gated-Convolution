@@ -9,15 +9,7 @@
 # Comparison of different approaches
 ![Comparison of different approaches](https://user-images.githubusercontent.com/59387983/87162966-a04ce900-c301-11ea-920a-d412c081c615.PNG)
 
-Image Inpainting 분야에서 대표적인 Branches와의 비교
-
-데이터가 가진 정보를 의미적으로 학습이 가능한지
-
-모델이 글로벌한 영역에서의 데이터를 반영하는지
-
-마스크의 형태가 자유로운지
-
-사용자의 가이드 데이터를 반영할 수 있는지
+Image Inpainting 분야에서 대표적인 Branches와의 비교에서 논문에서 제시한 모델은 데이터가 가진 정보를 의미적으로 학습하고, 글로벌한 영역에서의 데이터를 반영한다. 또한, 마스크의 형태를 자유롭게 설정할 수 있고, 사용자가 유도하는 데이터를 반영할 수 있다.
 
 # Vanilla Convolution
 ![vanilla convolutions(1)](https://user-images.githubusercontent.com/59387983/87162684-3d5b5200-c301-11ea-9762-7df9f2a54d2b.PNG)
@@ -28,7 +20,8 @@ Vanilla Convolution은 몇가지 이유에서 Free-form image Inpainting에 적�
 
 2. Image Inpainting에서 입력 데이터는 holes의 외부 유효한 픽셀/특징과 얕은 층에서 유효하지 않은 픽셀/특징 또는 깊은 층에서 마스크된 내부의 합성되는 픽셀/특징으로 구성된다. 이는 학습시 color discrepancy, blurriness and obvious edge responses와 같은 명료하지 않음을 유발한다.
 
-
+# Partial Convolution
+![partial convolution](https://user-images.githubusercontent.com/59387983/87162702-3fbdac00-c301-11ea-96ee-ed95abd7dd47.PNG)
 
 
 
@@ -36,6 +29,6 @@ Vanilla Convolution은 몇가지 이유에서 Free-form image Inpainting에 적�
 ![functions of gated convolution](https://user-images.githubusercontent.com/59387983/87162693-3e8c7f00-c301-11ea-8168-56d6bae52cc2.PNG)
 ![Ilustration of convolutions](https://user-images.githubusercontent.com/59387983/87162695-3f251580-c301-11ea-83bb-f31f2e0759e4.PNG)
 ![Overview of SN-PatchGAN](https://user-images.githubusercontent.com/59387983/87162699-3f251580-c301-11ea-9975-395880be246a.PNG)
-![partial convolution](https://user-images.githubusercontent.com/59387983/87162702-3fbdac00-c301-11ea-96ee-ed95abd7dd47.PNG)
+
 
 
