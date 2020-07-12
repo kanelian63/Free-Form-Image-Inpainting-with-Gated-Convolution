@@ -16,6 +16,7 @@ Image Inpainting 분야에서 대표적인 Branches와의 비교에서 논문에
 ![vanilla convolutions(2)](https://user-images.githubusercontent.com/59387983/87162689-3df3e880-c301-11ea-9b0a-4ea007204f5e.PNG)
 
 Vanilla Convolution은 몇가지 이유에서 Free-form image Inpainting에 적합하지 않다.
+
 1. 모든 공간적 위치에서 동일한 필터를 적용하는데, 이는 모든 픽셀로부터 sliding-window를 통해서 지역적 특징을 추출해야하는 이미지 분류나 객체인식에 적합하다. 즉, 입력 데이터의 모든 픽셀이 유효하다는 것이다.
 
 2. Image Inpainting에서 입력 데이터는 holes의 외부 유효한 픽셀/특징과 얕은 층에서 유효하지 않은 픽셀/특징 또는 깊은 층에서 마스크된 내부의 합성되는 픽셀/특징으로 구성된다. 이는 학습시 color discrepancy, blurriness and obvious edge responses와 같은 명료하지 않음을 유발한다.
@@ -25,7 +26,11 @@ Vanilla Convolution은 몇가지 이유에서 Free-form image Inpainting에 적�
 ![partial convolution](https://user-images.githubusercontent.com/59387983/87162702-3fbdac00-c301-11ea-96ee-ed95abd7dd47.PNG)
 
 Partial convolution은 정형화되지 않은 마스크에서 복원이미지의 품질을 향상시키지만, 여전히 몇몇 이슈가 있다.
-1. 
+
+1. 공간적인 위치를 휴리스틱하게 유효한지에 대해서 구별한다. 이는 다음 레이어의 마스크는 이전 레이어의 필터 범위에 포함되는 픽셀 수에 관계없이 마스크로 설정된다는 것을 말한다. 예를 들어, 현재 마스크를 업데이트하기 위해 1 개의 유효한 픽셀과 9 개의 유효한 픽셀이 동일하게 처리되는 것을 말한다.
+2. 사용자의 추가적인 입력 데이터를 처리하는데 적합하지 않다.
+3. 유효하지 않은 픽셀이 깊은 층에서 점진적으로 사라지며, 서서히 모든 마스크가 하나의 값으로 합성된다.
+4. 모든 채널은 유연성이 제한된 상태로 동일한 마스크를 공유하며, 본질적으로 학습 불가능한 단일 채널의 특징 하드 게이팅으로 볼 수 있다.
 
 
 # Gated Convolution
