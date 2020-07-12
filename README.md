@@ -12,8 +12,11 @@
 Image Inpainting 분야에서 대표적인 Branches와의 비교
 
 데이터가 가진 정보를 의미적으로 학습이 가능한지
+
 모델이 글로벌한 영역에서의 데이터를 반영하는지
+
 마스크의 형태가 자유로운지
+
 사용자의 가이드 데이터를 반영할 수 있는지
 
 ![vanilla convolutions(1)](https://user-images.githubusercontent.com/59387983/87162684-3d5b5200-c301-11ea-9762-7df9f2a54d2b.PNG)
