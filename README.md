@@ -40,6 +40,7 @@ Partial convolution은 정형화되지 않은 마스크에서 복원이미지의
 
 ![Ilustration of convolutions](https://user-images.githubusercontent.com/59387983/87162695-3f251580-c301-11ea-83bb-f31f2e0759e4.PNG)
 
+아 열받아!! 이거 그림이랑 코드랑 좀 다르다. 좀 구체적으로 써놓지.. 한참 헤매게 만드네으으으으으으
 
 
 # Architecture
