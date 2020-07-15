@@ -42,6 +42,6 @@ Partial convolution은 정형화되지 않은 마스크에서 복원이미지의
 ![Overview of SN-PatchGAN](https://user-images.githubusercontent.com/59387983/87162699-3f251580-c301-11ea-9975-395880be246a.PNG)
 
 # Contextual Attention
-Contextual Attention에 대해 논문에서 여러 장점을 언급정도로 소개하고 있어서 이에 대해 알아볼 필요가 있다. 
+Contextual Attention에 대해 논문에서 여러 장점을 언급정도로 소개하고 있어서 이에 대해 알아볼 필요가 있다. 알아보니 이 논문의 저자가 Contextual Attention을 고안했다. 이 저자의 모든 논문을 읽을 기세다.
 
 # 
