@@ -43,7 +43,7 @@ Partial convolution은 정형화되지 않은 마스크에서 복원이미지의
 
 # Contextual Attention
 
-Contextual Attention에 대해 논문에서 여러 장점을 언급정도로 소개하고 있어서 이에 대해 알아볼 필요가 있다. 알아보니 이 논문의 저자가 Contextual Attention을 고안했다. 이를 발표한 논문이 Generative Image Inpainting with Contextual Attention이고, 아래에서 Contextual Attention에 대해 알아보겠다.
+Contextual Attention에 대해 논문에서 여러 장점을 언급정도로 소개하고 있어서 이에 대해 알아볼 필요가 있다. 이에 대해 구체적으로 발표한 논문이 Generative Image Inpainting with Contextual Attention이고, 아래에서 Contextual Attention에 대해 알아보겠다. 알아보니 이 논문의 저자가 마찬가지로 Contextual Attention을 고안했다. 지금은 구글 브레인에서 근무하시는 듯하다. 역시 좋은 논문을 쓴 저자는 좋은 회사에 들어가나보다.
 
 
 # Generative Image Inpainting with Contextual Attention
