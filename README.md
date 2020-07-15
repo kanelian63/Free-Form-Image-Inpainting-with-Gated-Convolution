@@ -49,7 +49,6 @@ contextual attention layer에서 알려진 백그라운드 패치로부터 피�
 
 # Generative Image Inpainting with Contextual Attention
 
-![contextual attention layer](https://user-images.githubusercontent.com/59387983/87590832-66754b80-c722-11ea-8eee-79858765ca14.PNG)
 ![visualization of attention map](https://user-images.githubusercontent.com/59387983/87590836-683f0f00-c722-11ea-9ea1-2f69902acf6a.PNG)
 
 Generative Image Inpainting with Contextual Attention라는 논문에서 발췌하였다.
@@ -58,6 +57,9 @@ Generative Image Inpainting with Contextual Attention라는 논문에서 발췌�
 컨브 뉴럴넷은 지역적인 합성곱커널로 레이어를 따라서 처리하기 때문에 어떤 멀리 떨어진 공간상의 위치로부터 특징을 반영하기에 효과적이지 않다. 이러한 한계를 극복하기 위해서 어텐션 메커니즘을 고려했고, 이를 novel contextual attention layer이라 명명한다.
 
 # Match and attend
+
+![contextual attention layer](https://user-images.githubusercontent.com/59387983/87590832-66754b80-c722-11ea-8eee-79858765ca14.PNG)
+
 우리는 백그라운드를 둘러싸고 있는 누락된 픽셀들의 특징을 주변과 일치는 것을 고려하였다. 우선, 3x3 패치로 배경을 추출하고, 이를 컨벌루션 필터처럼 reshape한다. 그리고 포레그라운드 패치와 백그라운드 패치를 일치시키기 위해서 정규화된 내부 곱(cosine similarity)을 측정하였다. 그리고 포레그라운드 패치와 백그라운드 패치를 일치시키기 위해서 정규화된 내부 곱(cosine similarity)을 측정하였다. 그라운드와 포레그라운드 차원 사이의 scaled softmax로 유사도를 측정하였다. 각 픽셀의 attention score를 측정하기 위해서 λ를 softmax로 처리하기 전에 곱해주었다. λ는 어떤 고정된 값이다. 이는 convolution and channel-wise softmax로서 효과적으로 구현되었다. 이렇게 추출된 패치를 deconvolutional filters로 사용하여 포레그라운드를 재구성한다.
 
 # Cosine Similarity
