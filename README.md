@@ -54,4 +54,5 @@ Contextual Attention에 대해 논문에서 여러 장점을 언급정도로 소
 Generative Image Inpainting with Contextual Attention라는 논문에서 발췌하였다.
 
 
+컨브 뉴럴넷은 지역적인 합성곱커널로 레이어를 따라서 처리하기 때문에 어떤 멀리 떨어진 공간상의 위치로부터 특징을 반영하기에 효과적이지 않다. 이러한 한계를 극복하기 위해서 어텐션 메커니즘을 고려했고, 이를 novel contextual attention layer이라 명명한다.
 # 
