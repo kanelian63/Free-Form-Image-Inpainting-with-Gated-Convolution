@@ -46,5 +46,6 @@ Partial convolution은 정형화되지 않은 마스크에서 복원이미지의
 # Architecture
 ![Overview of SN-PatchGAN](https://user-images.githubusercontent.com/59387983/87162699-3f251580-c301-11ea-9975-395880be246a.PNG)
 
+어이없네.. contexture conv 이거 어떻게 구현하란 말이지..
 
 
