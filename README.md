@@ -43,7 +43,7 @@ Partial convolution은 정형화되지 않은 마스크에서 복원이미지의
 
 # Contextual Attention
 
-Contextual Attention에 대해 논문에서 여러 장점을 언급정도로 소개하고 있어서 이에 대해 알아볼 필요가 있다. 이에 대해 구체적으로 발표한 논문이 Generative Image Inpainting with Contextual Attention이고, 아래에서 Contextual Attention에 대해 알아보겠다. 알아보니 이 논문의 저자가 마찬가지로 Contextual Attention을 고안했다. 지금은 구글 브레인에서 근무하시는 듯하다. 역시 좋은 논문을 쓴 저자는 좋은 회사에 들어가나보다.
+Contextual Attention에 대해 논문에서 여러 장점을 언급정도로 소개하고 있어서 이에 대해 알아볼 필요가 있다. 이에 대해 구체적으로 발표한 논문이 Generative Image Inpainting with Contextual Attention이고, 아래에서 Contextual Attention에 대해 알아보겠다. 알아보니 이 논문의 저자가 마찬가지로 Contextual Attention을 고안했다. 지금은 구글 브레인에서 근무하시는 듯하다. 역시 좋은 논문을 쓴 저자는 좋은 회사에 들어가나보다. 아 모르겠다 진짜.. 아 물어볼 사람도 없고 답답하다...
 
 contextual attention layer에서 알려진 백그라운드 패치로부터 피처의 정보를 가져와서 누락된 패치를 생성할 위치를 배운다. 이는 미분 가능하고, 따라서 딥러닝 모델로 학습될 수 있다. fully-convolutional하기 때문에 임의의 해상도에서 활용 가능하다.
 
