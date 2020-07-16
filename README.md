@@ -1,6 +1,8 @@
 # Free-Form-Image-Inpainting-with-Gated-Convolution
 #ICCV 2019 #GAN #Image Inpainting #Computer Vision
 
+이번 논문은 깊이가 너무 있고, 진짜 최신의 뛰어난 결과를 낸 논문이다. 저자가 진짜 대단한 듯하다. 제대로 이해하는데 한참 걸릴거 같다. 장기 프로젝트다.
+
 Contextual Attention에 대해 논문에서 여러 장점을 언급정도로 소개하고 있어서 이에 대해 알아볼 필요가 있다. 이에 대해 구체적으로 발표한 논문이 Generative Image Inpainting with Contextual Attention이고, 아래에서 Contextual Attention에 대해 알아보겠다. 알아보니 이 논문의 저자가 마찬가지로 Contextual Attention을 고안했다. 지금은 구글 브레인에서 근무하시는 듯하다. 역시 좋은 논문을 쓴 저자는 좋은 회사에 들어가나보다. 아 모르겠다 진짜.. 아 물어볼 사람도 없고 답답하다...
 
 tf.extract_image_patches라는 모듈이 텐서플로우 2.2부터 지원한다. 이거 너무 최신 패치라 다른 모듈에서 지원을 안해서 설치할 때 에러가 발생한다. 또 환경을 다 뒤집어 엎어야되나? 쉬운게 없다. 아이고..
