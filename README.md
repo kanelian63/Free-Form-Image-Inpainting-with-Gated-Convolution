@@ -63,5 +63,13 @@ Generative Image Inpainting with Contextual Attention라는 논문에서 발췌�
 우리는 백그라운드를 둘러싸고 있는 누락된 픽셀들의 특징을 주변과 일치는 것을 고려하였다. 우선, 3x3 패치로 배경을 추출하고, 이를 컨벌루션 필터처럼 reshape한다. 그리고 포레그라운드 패치와 백그라운드 패치를 일치시키기 위해서 정규화된 내부 곱(cosine similarity)을 측정하였다. 그리고 포레그라운드 패치와 백그라운드 패치를 일치시키기 위해서 정규화된 내부 곱(cosine similarity)을 측정하였다. 그라운드와 포레그라운드 차원 사이의 scaled softmax로 유사도를 측정하였다. 각 픽셀의 attention score를 측정하기 위해서 λ를 softmax로 처리하기 전에 곱해주었다. λ는 어떤 고정된 값이다. 이는 convolution and channel-wise softmax로서 효과적으로 구현되었다. 이렇게 추출된 패치를 deconvolutional filters로 사용하여 포레그라운드를 재구성한다.
 
 # Cosine Similarity
+![cosine similarity original function](https://user-images.githubusercontent.com/59387983/87630870-22f5fe00-c771-11ea-8d2b-0c9c36e504f8.PNG)
+
+코사인 유사도는 −1에서 1까지의 값을 가지며, −1은 서로 완전히 반대되는 경우, 0은 서로 독립적인 경우, 1은 서로 완전히 같은 경우를 의미한다.
+
+텍스트 매칭에 적용될 경우, A, B의 벡터로는 일반적으로 해당 문서에서의 단어 빈도가 사용된다. 코사인 유사도는 문서들간의 유사도를 비교할 때 문서의 길이를 정규화하는 방법의 하나라고 볼 수도 있다.
+
+정보 검색의 경우, 문서의 단어 빈도(tf-idf 가중치)가 음의 값이 되는 것이 불가능하므로 두 문서 사이의 코사인 유사도는 0에서 1까지의 값으로 표현되며, 두 단어 빈도간의 각도는 90°를 넘을 수 없다.
+
 ![cosine similarity](https://user-images.githubusercontent.com/59387983/87599945-b35f1f00-c72e-11ea-8dc8-b4ca755b6951.PNG)
   
