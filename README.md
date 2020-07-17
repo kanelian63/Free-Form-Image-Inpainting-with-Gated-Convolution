@@ -82,3 +82,4 @@ Generative Image Inpainting with Contextual Attention라는 논문에서 발췌�
 
 ![cosine similarity](https://user-images.githubusercontent.com/59387983/87599945-b35f1f00-c72e-11ea-8dc8-b4ca755b6951.PNG)
   
+# Spectral normalization for generative adversarial networks
