@@ -78,3 +78,5 @@ Generative Image Inpainting with Contextual Attention라는 논문에서 발췌�
 # Spectral normalization for generative adversarial networks
 
 # Singular Value Decomposition
+
+# Lipschitz norm
